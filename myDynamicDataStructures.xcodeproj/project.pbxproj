@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30DA2D91234600320087E563 /* deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30DA2D90234600320087E563 /* deque.cpp */; };
+		30DA2D9523485E0F0087E563 /* binaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30DA2D9423485E0F0087E563 /* binaryTree.cpp */; };
+		30DA2D97234891490087E563 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30DA2D96234891490087E563 /* map.cpp */; };
 		30F8CEB1233BD3330075B374 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F8CEB0233BD3330075B374 /* main.cpp */; };
 		30F8CEBB233BE4C80075B374 /* singleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F8CEBA233BE4C80075B374 /* singleLinkedList.cpp */; };
 		30F8CEBD2340AB990075B374 /* doublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F8CEBC2340AB990075B374 /* doublyLinkedList.cpp */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		30DA2D90234600320087E563 /* deque.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deque.cpp; sourceTree = "<group>"; };
+		30DA2D9423485E0F0087E563 /* binaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryTree.cpp; sourceTree = "<group>"; };
+		30DA2D96234891490087E563 /* map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
 		30F8CEAD233BD3330075B374 /* myDynamicDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myDynamicDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F8CEB0233BD3330075B374 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		30F8CEBA233BE4C80075B374 /* singleLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = singleLinkedList.cpp; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				30F8CEBE234284E90075B374 /* stack.cpp */,
 				30F8CEC02345415F0075B374 /* queue.cpp */,
 				30DA2D90234600320087E563 /* deque.cpp */,
+				30DA2D9423485E0F0087E563 /* binaryTree.cpp */,
+				30DA2D96234891490087E563 /* map.cpp */,
 			);
 			path = myDynamicDataStructures;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 				30F8CEC12345415F0075B374 /* queue.cpp in Sources */,
 				30DA2D91234600320087E563 /* deque.cpp in Sources */,
 				30F8CEBD2340AB990075B374 /* doublyLinkedList.cpp in Sources */,
+				30DA2D9523485E0F0087E563 /* binaryTree.cpp in Sources */,
 				30F8CEB1233BD3330075B374 /* main.cpp in Sources */,
+				30DA2D97234891490087E563 /* map.cpp in Sources */,
 				30F8CEBB233BE4C80075B374 /* singleLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
