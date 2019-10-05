@@ -34,6 +34,7 @@
 		30DA2D9423485E0F0087E563 /* binaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryTree.cpp; sourceTree = "<group>"; };
 		30DA2D96234891490087E563 /* map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
 		30DA2D982348FEBD0087E563 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		30DA2D9923490D150087E563 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		30F8CEAD233BD3330075B374 /* myDynamicDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myDynamicDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F8CEB0233BD3330075B374 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		30F8CEBA233BE4C80075B374 /* singleLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = singleLinkedList.cpp; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		30F8CEA4233BD3330075B374 = {
 			isa = PBXGroup;
 			children = (
+				30DA2D9923490D150087E563 /* readme.txt */,
 				30DA2D982348FEBD0087E563 /* .gitignore */,
 				30F8CEAF233BD3330075B374 /* myDynamicDataStructures */,
 				30F8CEAE233BD3330075B374 /* Products */,

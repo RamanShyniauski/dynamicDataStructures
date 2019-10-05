@@ -18,23 +18,7 @@
 using namespace std;
 
 int main()
-{
-    /*
-                                                Hi there!
-    You can check my realisaion of the following dynamic data structures:
-    - Single Linked List
-    - Doubly Linked List
-    - Stack (based on single linked list)
-    - Queue (based on single linked list)
-    - Deque (based on dynamic array)
-    - Binary Tree
-    - Map (Binary Tree based)
-     
-    All methods have description in the .cpp files. Here you can find some examples of how they work.
-     
-                                                 Enjoy!
-    */
-    
+{    
     /*
     // Just a small example to show how Doubly Linked List works
     
@@ -60,15 +44,4 @@ int main()
      
     cout << "Seems that we've done. Cool! You can also check the following methods for a doubly linked list: \n .push_back(T data) - push data at the end of a list \n .push_front(T data) - push data at the beginning of the list \n .pop_back() - remove tail \n .pop_front() - remove head \n .insert(T value, int index) - insert value at index \n .removeAt(int index) - remove value at index \n .clear() - remove all values from a list \n .print() - print out a list \n .getSize() - return size of a list \n doublyList[int index] - return element at index position \n\n\tHAVE FUN!!!\n" << endl;
      */
- 
-    
-    Map<int, string> q;
-    
-    q.insert(1, "a");
-    q.insert(2, "b");
-    q.insert(3, "b2");
-    
-    string z = q.searchByKey(2).value;
-    cout << z;
-    
 }
