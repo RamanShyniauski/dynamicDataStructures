@@ -42,7 +42,6 @@ private:
     Node<T> *tail;
 };
 
-
 template<typename T>
 Queue<T>::Queue()
 {
@@ -97,7 +96,7 @@ void Queue<T>::pop()
     }
     else
     {
-        throw std::out_of_range("can't remove element fron an empty queue");
+        throw std::out_of_range("can't remove element from an empty queue");
     }
 }
 
@@ -110,7 +109,7 @@ T Queue<T>::front()
     }
     else
     {
-        throw std::out_of_range("can't get element fron an empty queue");
+        throw std::out_of_range("can't get element from an empty queue");
     }
 }
 
@@ -123,7 +122,7 @@ T Queue<T>::back()
     }
     else
     {
-        throw std::out_of_range("can't get element fron an empty queue");
+        throw std::out_of_range("can't get element from an empty queue");
     }
 }
 

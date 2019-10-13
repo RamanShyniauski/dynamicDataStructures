@@ -34,21 +34,21 @@ public:
     Map();
     ~Map();
     
-    void insert(K key, V value);                    //insert key:value to a map (note: key should be unique)
-    MapNode<K, V> searchByKey(K key);               //search for value in a map by key
-    void destroy_map();                             //delete all elements in a map
-    void printKeys();                               //print map  Keys top->left->rigt
-    void printValues();                             //   -//-    Values top->left->rigt
-    void printKeyValues();                          //   -//-    Key:Values top->left->right
-    void size() { return Size; };                   //return size of a map
+    void insert(K key, V value);                    //insert key:value to the map (note: key should be unique)
+    MapNode<K, V> searchByKey(K key);               //search for value in the map by key
+    void destroy_map();                             //delete all elements in the map
+    void printKeys();                               //print map Keys in top->left->rigt order
+    void printValues();                             //   -//-   Values  in top->left->rigt order
+    void printKeyValues();                          //   -//-   Key:Values in top->left->right order
+    void size() { return Size; };                   //return size of the map
     
 private:
-    void insert(K key, V value, MapNode<K, V> *leaf);        //insert value into a leaf
-    MapNode<K, V> searchByKey(K key, MapNode<K, V> *leaf);   //search for value in a leaf
-    void destroy_map(MapNode<K, V> *leaf);                   //destroy map from a leaf
-    void printKeys(MapNode<K, V> *leaf);                     //print map  Keys top->left->rigt
-    void printValues(MapNode<K, V> *leaf);                   //   -//-    Values top->left->rigt
-    void printKeyValues(MapNode<K, V> *leaf);                //   -//-    Key:Values top->left->right
+    void insert(K key, V value, MapNode<K, V> *leaf);        //insert value into the leaf
+    MapNode<K, V> searchByKey(K key, MapNode<K, V> *leaf);   //search for value in the leaf
+    void destroy_map(MapNode<K, V> *leaf);                   //destroy map from the leaf
+    void printKeys(MapNode<K, V> *leaf);                     //print map Keys in top->left->rigt order
+    void printValues(MapNode<K, V> *leaf);                   //   -//-   Values in top->left->rigt order
+    void printKeyValues(MapNode<K, V> *leaf);                //   -//-   Key:Values in top->left->right order
     
     int Size;
     MapNode<K, V> *root;

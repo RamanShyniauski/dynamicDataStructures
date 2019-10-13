@@ -19,7 +19,7 @@ public:
     void push(T data);                  //add element to the top of the stack
     T pop();                            //get the top element and remove it
     T peek();                           //get the top element without removing
-    bool empty();                       //return boolean tru if stack is empty
+    bool empty();                       //return boolean 'true' if stack is empty
     int getSize() { return Size; };     //get the size of the stack
     void print();                       //print all elements from top to bottom
     
@@ -79,7 +79,7 @@ T Stack<T>::pop()
 {
     if (!Size)
     {
-        throw std::out_of_range("can't remove element fron an empty stack");
+        throw std::out_of_range("can't remove element from an empty stack");
     }
     else
     {
@@ -97,7 +97,7 @@ T Stack<T>::peek()
 {
     if (!Size)
     {
-        throw std::out_of_range("can't read element fron an empty stack");
+        throw std::out_of_range("can't read element from an empty stack");
     }
     else
     {

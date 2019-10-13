@@ -16,15 +16,15 @@ public:
     DoublyList();
     ~DoublyList();
     
-    void push_back(T data);             //add element at the end of a list
+    void push_back(T data);             //add element at the end of the list
     void push_front(T data);            //add element at the beginning of the list
-    void pop_back();                    //remove element from the end of a list
+    void pop_back();                    //remove element from the end of the list
     void pop_front();                   //remove element at the beginning of the list
     void insert(T value, int index);    //insert value at index
     void removeAt(int index);           //remove value at index
     void clear();                       //clear list
     void print();                       //print list
-    int getSize() { return Size; };     //get list size
+    int getSize() { return Size; };     //get list's size
     T& operator[](const int index);     //get element at index
     
 private:
@@ -85,13 +85,13 @@ void DoublyList<T>::push_back(T data)
 template<typename T>
 void DoublyList<T>::push_front(T data)
 {
-    if (Size)                       //check is list blank or not
+    if (Size)   //check is list blank or not
     {
         Node<T> *current = head;
         head = new Node<T>(data, head);
-        current->pPrev = head;      //point to a new head
+        current->pPrev = head;  //point to a new head
     }
-    else { head = tail = new Node<T>(data); }   // if blank head == tail and both of them has pPrev = pNext = nullptr
+    else { head = tail = new Node<T>(data); }   //if blank head == tail and both of them has pPrev = pNext = nullptr
     
     Size++;
 }
@@ -122,7 +122,7 @@ void DoublyList<T>::insert(T value, int index)
         return;
     }
     
-    if (index <= Size / 2)      //check is it better start from tail or from head
+    if (index <= Size / 2)  //check is it better start from tail or from head
     {
         Node<T> *previous = this->head;
         
@@ -225,7 +225,7 @@ void DoublyList<T>::removeAt(int index)
     {
         Node<T> *next = this->tail;
         
-        for (int i = 0; i < Size - index - 2; i++) //-2 because for -1 released above with push_back()
+        for (int i = 0; i < Size - index - 2; i++)
         {
             next = next->pPrev;
         }
@@ -255,7 +255,7 @@ T & DoublyList<T>::operator[](const int index)
         int counter = 0;
         Node<T> *current = this->head;
         
-        while (current != nullptr) //while element is not last in a list
+        while (current != nullptr) //while element is not last in the list
         {
             if (counter == index)
             {

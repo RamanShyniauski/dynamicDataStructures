@@ -16,13 +16,13 @@ public:
     BinaryTree();
     ~BinaryTree();
     
-    void insert(T key);             //insert value to a tree
+    void insert(T key);             //insert value to the tree
     T search(T key);                //search for value in a tree -> return data if find and return NULL if not
-    void destroy_tree();            //delete all elements in a tree
-    void inorder_print();           //print a tree left->top->right
-    void postorder_print();         //     -//-    left->right->top
-    void preorder_print();          //     -//-    top->left->rigt
-    void size() { return Size; };   //return size of binary tree
+    void destroy_tree();            //delete all elements in the tree
+    void inorder_print();           //print a tree in left->top->right order
+    void postorder_print();         //     -//-       left->right->top order
+    void preorder_print();          //     -//-       top->left->rigt order
+    void size() { return Size; };   //return size of the binary tree
     
 private:
     template<typename TN>

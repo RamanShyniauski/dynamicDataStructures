@@ -16,9 +16,9 @@ public:
     Deque();
     ~Deque();
     
-    void push_back(T data);             //add element at the right end of a deque
+    void push_back(T data);             //add element at the right end of the deque
     void push_front(T data);            //add element at the left end of the deque
-    void pop_back();                    //remove element from the right end of a deque
+    void pop_back();                    //remove element from the right end of the deque
     void pop_front();                   //remove element from the left end of the deque
     void clear();                       //clear deque
     void print();                       //print deque
@@ -38,7 +38,7 @@ Deque<T>::Deque()
 {
     Size = 0;
     arr = nullptr;
-    head = tail = 0; //do not really need, but just for sure that head and tail are initialized
+    head = tail = 0;
 }
 
 template<typename T>
@@ -120,7 +120,7 @@ void Deque<T>::pop_back()
     }
     else
     {
-        throw std::out_of_range("can't remove element fron an empty dequeue");
+        throw std::out_of_range("can't remove element from an empty dequeue");
     }
 }
 
@@ -143,7 +143,7 @@ void Deque<T>::pop_front()
     }
     else
     {
-        throw std::out_of_range("can't remove element fron an empty dequeue");
+        throw std::out_of_range("can't remove element from an empty dequeue");
     }
 }
 
@@ -152,7 +152,7 @@ void Deque<T>::clear()
 {
     if (!Size)
     {
-        throw std::out_of_range("can't remove element fron an empty dequeue");
+        throw std::out_of_range("can't remove element from an empty dequeue");
     }
     
     while (Size)
@@ -179,7 +179,7 @@ T Deque<T>::front()
     }
     else
     {
-        throw std::out_of_range("can't get element fron an empty dequeue");
+        throw std::out_of_range("can't get element from an empty dequeue");
     }
 }
 
@@ -192,6 +192,6 @@ T Deque<T>::back()
     }
     else
     {
-        throw std::out_of_range("can't get element fron an empty dequeue");
+        throw std::out_of_range("can't get element from an empty dequeue");
     }
 }

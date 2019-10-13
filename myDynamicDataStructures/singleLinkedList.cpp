@@ -16,26 +16,26 @@ public:
     List();
     ~List();
     
-    void push_back(T data);             //add element at the end of a list
+    void push_back(T data);             //add element at the end of the list
     void push_front(T data);            //add element at the beginning of the list
-    void pop_back();                    //remove element from the end of a list
+    void pop_back();                    //remove element from the end of the list
     void pop_front();                   //remove element at the beginning of the list
     void insert(T value, int index);    //insert value at index
     void removeAt(int index);           //remove value at index
     void clear();                       //clear list
     void print();                       //print list
     int getSize() { return Size; };     //get list size
-    T& operator[](const int index);     //get element at index (return ref to element, so we can change data)
+    T& operator[](const int index);     //get element at index (return & to element)
     
 private:
     template<typename TN>           //create template to use different types to store data
     class Node
     {
-    public:                         //use only public because only we have access to that class under private section
+    public:                         //use only public because only we have access to that class in private section
         Node *pNext;                //pointer to the next element
-        TN data;                    //data that stored
+        TN data;                    //stored data
         
-        Node(TN data = TN(), Node *pNext = nullptr) //nullptr by default (so it's last element by default); TN() - initialize variable with TN type
+        Node(TN data = TN(), Node *pNext = nullptr) //nullptr by default (so it's last element by default); TN() - initialize data with value of TN type
         {
             this->data = data;
             this->pNext = pNext;
@@ -43,7 +43,7 @@ private:
     };
     
     int Size;       //list size
-    Node<T> *head;  //pointer to 1st element
+    Node<T> *head;  //pointer to the first element
     
 };
 
@@ -85,7 +85,7 @@ void List<T>::push_back(T data)
 template<typename T>
 void List<T>::push_front(T data)
 {
-    head = new Node<T>(data, head); //new element is  a head and he points to previous head
+    head = new Node<T>(data, head); //new element is a head and he points to the previous head
     Size++;
 }
 
@@ -94,9 +94,9 @@ T & List<T>::operator[](const int index)
 {
     int counter = 0;
     
-    Node<T> *current = this->head; //tmp variable to store current pointers; equals to head cause we start to iterate from the 1st element in a list
+    Node<T> *current = this->head; //tmp variable to store current pointers; equals to head because we start to iterate from the first element in the list
     
-    while (current != nullptr) //while element is not last in a list
+    while (current != nullptr) //while element is not last in the list
     {
         if (counter == index)
         {
@@ -123,7 +123,7 @@ void List<T>::insert(T value, int index)
     }
     else
     {
-        Node<T> *previous = this->head; //need this to set his pointer to a new element
+        Node<T> *previous = this->head; //need this temp variable to set his pointer to a new element
         
         for (int i = 0; i < index - 1; i++)
         {
@@ -141,7 +141,7 @@ void List<T>::removeAt(int index)
 {
     if (index > Size - 1 || index < 0)
     {
-        throw std::out_of_range("can't remove element fron an empty stack");
+        throw std::out_of_range("can't remove element from an empty stack");
     }
     
     if (index == 0)
