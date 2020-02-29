@@ -1,4 +1,6 @@
-**Hi there!**
+# Dynamic Data Structures
+
+Hi there!
 
 You can check my C++ realisation of the following dynamic data structures:
 * Single Linked List
